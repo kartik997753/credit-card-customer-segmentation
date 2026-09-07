@@ -27,7 +27,7 @@ AllLife Bank wanted to improve market penetration and fix a poor customer-suppor
 **Preprocessing**
 - 95th-percentile capping (Winsorization) on credit limit and online visits — preserving affluent customers while stopping them from pulling centroids
 - `log1p` transformation to correct right skew
-- StandardScaler so a 1-visit difference carries the same weight as a ₹10,000 limit difference
+- StandardScaler so a 1-visit difference carries the same weight as a $10,000 limit difference
 - Dropped administrative IDs that would have introduced noise into distance calculations
 
 **Feature engineering** — `Total_Interactions` and `Digital_Engagement_Ratio` (online share of all interactions). The ratio encodes channel *preference* independently of volume, so a 10-visit and a 5-visit digital-first customer group together rather than splitting by activity level.
